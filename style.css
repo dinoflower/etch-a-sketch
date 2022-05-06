@@ -1,0 +1,42 @@
+/*body {
+    background-color: #D4C5E2;
+}*/
+
+h1 {
+    color: #914D76;
+}
+
+.padding {
+    width: 30%;
+    padding-bottom: 25%;
+    margin: 0 auto;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.blank {
+    background-color: #C9D7F8;
+    flex: 1;
+    height: 1px;
+    width: 1px;
+}
+
+.hover {
+    background-color: #A7E2E3;
+    flex: 1;
+    height: 1px;
+    width: 1px;
+}
+
+.set {
+    background-color: #4C6663;
+    flex: 1;
+    height: 1px;
+    width: 1px;
+}
+
+
+/* #D4C5E2 #C9D7F8 #A7E2E3 #914D76 #4C6663   #80CFA9 */
