@@ -9,16 +9,11 @@ const once = {
     once : true
 };
 
-function sketch() {
-    box.setAttribute("class", "filled");
-};
-
 function createPad(type, input) {
     for (let i = 0; i < (square(input)); i++) {
         container = document.querySelector(".container");
         box = document.createElement(type);
         box.setAttribute("class", "blank");
-        box.addEventListener("pointerenter", sketch);
         container.style.gridTemplateColumns = `repeat(${input}, 1fr)`;
         container.appendChild(box);
         container.onmouseover = function(event) {
