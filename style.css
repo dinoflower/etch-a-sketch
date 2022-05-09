@@ -1,42 +1,52 @@
-/*body {
+body {
+    margin: 0;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
     background-color: #D4C5E2;
-}*/
+}
 
-h1 {
-    color: #914D76;
+.header,
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
 }
 
 .padding {
-    width: 30%;
-    padding-bottom: 25%;
-    margin: 0 auto;
+    background: black;
+    position: relative;
+    width: 40%;
+}
+
+.padding:after {
+    content: "";
+    display: block;
+    padding-bottom: 100%;
 }
 
 .container {
-    display: flex;
-    flex-wrap: wrap;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: grid;
 }
 
 .blank {
     background-color: #C9D7F8;
-    flex: 1;
-    height: 1px;
-    width: 1px;
 }
 
-.hover {
+.first {
     background-color: #A7E2E3;
-    flex: 1;
-    height: 1px;
-    width: 1px;
 }
 
-.set {
+.filled {
     background-color: #4C6663;
-    flex: 1;
-    height: 1px;
-    width: 1px;
 }
 
 
-/* #D4C5E2 #C9D7F8 #A7E2E3 #914D76 #4C6663   #80CFA9 */
+/* background:#D4C5E2 initial box:#C9D7F8 hover box:#A7E2E3 text:#914D76 final box:#4C6663   #80CFA9 */

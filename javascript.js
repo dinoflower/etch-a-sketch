@@ -1,14 +1,31 @@
-
+let input = 16;
+let number;
+function square(input) {
+    number = input * input;
+    return number;
+}
 let box;
+const once = {
+    once : true
+};
 
-createPad("div", 16);
+function sketch() {
+    box.setAttribute("class", "filled");
+};
 
-function createPad(type, number) {
-    for (let i = 0; i < number; i++) {
+function createPad(type, input) {
+    for (let i = 0; i < (square(input)); i++) {
+        container = document.querySelector(".container");
         box = document.createElement(type);
         box.setAttribute("class", "blank");
-        document.querySelector(".container").appendChild(box);
+        box.addEventListener("pointerenter", sketch);
+        container.style.gridTemplateColumns = `repeat(${input}, 1fr)`;
+        container.appendChild(box);
+        container.onmouseover = function(event) {
+            let target = event.target;
+            target.style.background = "#4C6663";
+        };
     }
-}
+};
 
-//node is for boxes - type will be "div"
+createPad("div", 16);
