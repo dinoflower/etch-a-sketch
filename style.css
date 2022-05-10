@@ -16,7 +16,7 @@ body {
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 3.5em;
     font-weight: 700;
-    transition: opacity 5s ease-in 1s;
+    transition: opacity 3s ease-in .2s;
 }
 
 .fadeout {
