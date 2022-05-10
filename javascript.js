@@ -1,3 +1,7 @@
+const once = {
+    once : true
+};
+
 function createPad(type, input) {
     for (let i = 0; i < (input ** 2); i++) {
         container = document.querySelector(".container");
@@ -14,9 +18,8 @@ function createPad(type, input) {
 
 window.addEventListener("load", () => {
     greeting = document.querySelector(".greeting");
-    greeting.addEventListener("mousemove", () => {
-        greeting.classList.add("fadeout");
-    });
+    body = document.querySelector("body");
+    body.addEventListener("mousemove", () => { greeting.classList.add("fadeout"); }, once);
     greeting.addEventListener("transitionend", () => {
         let div = document.createElement("div");
         div.setAttribute("class", "padding");
