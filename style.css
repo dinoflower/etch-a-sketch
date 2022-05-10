@@ -54,8 +54,15 @@ body {
     background-color: #C9D7F8;
 }
 
-.first {
+button {
     background-color: #A7E2E3;
+    border: none;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #914D76;
+    font-weight: 700;
+    padding: 6px 12px;
+    border-radius: 8px;
+    /*margin: .5em 0;*/
 }
 
 
