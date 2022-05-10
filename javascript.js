@@ -12,4 +12,18 @@ function createPad(type, input) {
     }
 };
 
-createPad("div", 16);
+window.addEventListener("load", () => {
+    greeting = document.querySelector(".greeting");
+    greeting.addEventListener("mousemove", () => {
+        greeting.classList.add("fadeout");
+    });
+    greeting.addEventListener("transitionend", () => {
+        let div = document.createElement("div");
+        div.setAttribute("class", "padding");
+        greeting.replaceWith(div);
+        let container = document.createElement("div");
+        container.setAttribute("class", "container");
+        div.appendChild(container);
+        createPad("div", 16);
+    });
+});
