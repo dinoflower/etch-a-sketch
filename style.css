@@ -7,15 +7,14 @@ body {
     justify-content: space-between;
     align-items: center;
     background-color: #D4C5E2;
+    color: #914D76;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 700;
 }
 
 .greeting {
-    color: #914D76;
-    background-color: #D4C5E2;
     text-align: center;
-    font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 3.5em;
-    font-weight: 700;
     transition: opacity 3s ease-in .2s;
 }
 
@@ -50,20 +49,23 @@ body {
     display: grid;
 }
 
-.blank {
+.box {
     background-color: #C9D7F8;
 }
 
 button {
-    background-color: #A7E2E3;
-    border: none;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    color: #914D76;
-    font-weight: 700;
-    padding: 6px 12px;
+    background-color: #C9D7F8;
+    border: 2px solid #4C6663;
+    box-sizing: border-box;
+    font-size: 18px;
+    padding: 4px 8px;
     border-radius: 8px;
-    /*margin: .5em 0;*/
+    align-self: flex-end;
+    margin: 0 40px;
+    color: #914D76;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 700;
 }
 
 
-/* background:#D4C5E2 initial box:#C9D7F8 hover box:#A7E2E3 text:#914D76 final box:#4C6663   #80CFA9 */
+/* background:#D4C5E2 initial box:#C9D7F8 text:#914D76 final box:#4C6663   #80CFA9 */
