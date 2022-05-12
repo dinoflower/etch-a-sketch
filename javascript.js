@@ -3,11 +3,9 @@ const once = {
 };
 
 function createPad(type, input) {
-    let box = document.querySelector(".box");
-    let boxes = document.querySelectorAll(".box");
-    boxes.forEach(box => box.style.backgroundColor = "#C9D7F8");
+    container = document.querySelector(".container");
+    container.replaceChildren();
     for (let i = 0; i < (input ** 2); i++) {
-        container = document.querySelector(".container");
         box = document.createElement(type);
         box.setAttribute("class", "box");
         container.style.gridTemplateColumns = `repeat(${input}, 1fr)`;
