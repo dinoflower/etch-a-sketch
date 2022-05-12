@@ -2,12 +2,14 @@ const once = {
     once : true
 };
 
+// create sketchpad
+
 function createPad(type, input) {
     container = document.querySelector(".container");
     container.replaceChildren();
     for (let i = 0; i < (input ** 2); i++) {
         box = document.createElement(type);
-        box.setAttribute("class", "box");
+        box.style.background = "#C9D7F8";
         container.style.gridTemplateColumns = `repeat(${input}, 1fr)`;
         container.appendChild(box);
         container.onmouseover = function(event) {
@@ -16,6 +18,8 @@ function createPad(type, input) {
         };
     }
 };
+
+// transition from opening text to sketchpad screen
 
 window.addEventListener("load", () => {
     greeting = document.querySelector(".greeting");
@@ -29,8 +33,7 @@ window.addEventListener("load", () => {
         container.setAttribute("class", "container");
         padding.appendChild(container);
         reset = document.createElement("button");
-        reset.setAttribute("class", "button");
-        reset.innerHTML = "New Canvas";
+        reset.textContent = "New Canvas";
         footer = document.querySelector(".footer");
         body.insertBefore(reset, footer);
         reset.addEventListener("click", promptUser);
@@ -38,15 +41,21 @@ window.addEventListener("load", () => {
     });
 });
 
+// prompt user to create new sketchpad
+
 function promptUser() {
     let input = Number(window.prompt("How many squares across would you like your canvas?", "16"));
     if (input > 100) {
-        input = Number(window.prompt("Please choose a number under 100.", "16"));
+        if (window.confirm("Please enter a number under 100.")) {
+            promptUser();
+        }          
     }
     else if (isNaN(input)) {
-        input = Number(window.prompt("Please enter a number.", "16"));
+        if (window.confirm("Please enter a number.")) {
+            promptUser();
+        }
     }
     else {
         createPad("div", input);
     }
-}
+};

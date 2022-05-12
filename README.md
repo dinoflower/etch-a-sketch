@@ -1,9 +1,17 @@
-# etch-a-sketch
+# Etch-a-Sketch
 
-A simple drawing pad that translates mouse movement into color change, built in HTML, CSS, and JavaScript.
+A simple drawing pad that translates mouse movement into color change. Built in HTML, CSS, and JavaScript.
 
 Try it here! (link) Fully playable in-browser with no download required.
 
 ## Project Goals
 
-Cleaner code and animations/transitions.
+Cleaner code, animations, and a thematic color palette.
+
+## Challenges
+
+Maintaining clean code while generating most of the page at the end of a transition, ensuring the layout worked on wide screens, and maintaining contrast/readability with the color palette used.
+
+## Next Steps
+
+Implementing support for touch devices.
