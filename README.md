@@ -2,7 +2,7 @@
 
 A simple drawing pad that translates mouse movement into color change. Built in HTML, CSS, and JavaScript.
 
-Try it here! (link) Fully playable in-browser with no download required.
+Try it [here](https://dinoflower.github.io/etch-a-sketch/)! Fully playable in-browser with no download required.
 
 ## Project Goals
 
